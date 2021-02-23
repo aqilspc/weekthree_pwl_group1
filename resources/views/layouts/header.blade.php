@@ -28,16 +28,17 @@
                         
                         <div class="collapse navbar-toggleable-sm" id="tmNavbar">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item active">
+                                @php $home = Session::get('aktif'); @endphp
+                                <li class="nav-item {{ ( $home == 1) ? 'active' : '' }} " >
                                     <a href="{{url('/')}}" class="nav-link">Home</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item {{ ( $home == 4) ? 'active' : '' }}">
                                     <a href="{{url('about')}}" class="nav-link">About</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item {{ ( $home == 3) ? 'active' : '' }}">
                                     <a href="{{url('blog')}}" class="nav-link">Blog</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item {{ ( $home == 2) ? 'active' : '' }}">
                                     <a href="{{url('contact')}}" class="nav-link">Contact</a>
                                 </li>
                             </ul>                        

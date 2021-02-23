@@ -10,8 +10,8 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
 
                         <section>
-                            <h3 class="tm-gold-text tm-form-title">Pellentesque fermentum mauris</h3>
-                            <p class="tm-form-description">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien. Quisque vel sem eu turpis ullamcorper euismod. Praesent quis nisi ac augue luctus viverra. Sed et dui nisi. Fusce vitae dapibus justo.</p> 
+                            <h3 class="tm-gold-text tm-form-title">{{$title}}</h3>
+                            <p class="tm-form-description">{{$message}}</p> 
 
 
                             <form action="index.html" method="post" class="tm-contact-form">                                

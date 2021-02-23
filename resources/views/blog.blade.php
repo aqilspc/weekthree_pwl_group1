@@ -10,8 +10,8 @@
 
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9">
                         <div class="tm-blog-post">
-                            <h3 class="tm-gold-text">Pellentesque fermentum mauris</h3>
-                            <p>Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
+                            <h3 class="tm-gold-text">{{$title}}</h3>
+                            <p>{{$message}}</p>
                             <img src="img/tm-img-1010x336-1.jpg" alt="Image" class="img-fluid tm-img-post">
                             
                             <p>You can help templatemo by telling your friends about our HTML CSS templates. Praesent velit ante, congue ac dignissim in, vehicula sit amet urna. Fusce in dapibus quam, eget finibus velit. Nullam erat odio, vulputate id est ut, consequat rutrum justo. Vivamus vel leo vel nunc tincidunt mattis. Sed neque diam, semper suscipit dictum a, sodales ac metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
