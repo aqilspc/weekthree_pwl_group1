@@ -15,9 +15,9 @@ class HomeController extends Controller
 			'title'=>'Pengenalan Home',
 			'message'=>'Halamn pengenala kelompok 1 , Abdulloh Aqil - Zulfikar rahhman'
 		];
-		$data = Home::where('id',5)->first();
+		
 		$blog = Blog::limit(4)->get();
 		$category = Category::limit(5)->get();
-		return view('home',$hola,compact('data','blog','category'));
+		return view('home',$hola,compact('blog','category'));
 	}
 }

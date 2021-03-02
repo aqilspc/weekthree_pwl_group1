@@ -11,6 +11,7 @@ class Home extends Model
     protected $table = 'tb_home';
     public static function index()
     {
-        return Home::all();
+        $data = Home::where('id',5)->first();
+        return $data;
     }
 }

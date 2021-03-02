@@ -26,23 +26,23 @@
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 tm-2-rows-sm-down-1">
                         <h3 class="tm-gold-text">{{$title}}s</h3>
                         <p>{{$message}}</p>
-                        <!-- satu -->
+                      <?php echo $data->wording_about_satu?>
                     </div>
                 </div>
                 
                 <div class="row tm-margin-t-mid">
                     <div class="col-xs-12">
-                       <!-- dua -->
+                      <?php echo $data->wording_about_dua?>
                     </div>
                 </div>
 
                 <div class="row tm-margin-t-mid">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 tm-sm-m-b">
-                       <!-- tiga -->
+                      <?php echo $data->wording_about_tiga?>
                     </div>
 
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                       <!-- empat -->
+                       <?php echo  $data->wording_about_empat?>
                     </div>
 
                 </div>

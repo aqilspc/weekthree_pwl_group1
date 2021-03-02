@@ -1,13 +1,14 @@
         <footer class="tm-footer">
             <div class="container-fluid">
                 <div class="row">
-                    
+                    @php $m = new App\Models\Home();@endphp
+                    @php $ft = $m->index(); @endphp
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                         
                         <div class="tm-footer-content-box">
                             <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Hola</h3>
                             <div class="tm-gray-bg">
-                             <?php echo $data->wording_footer_satu?>
+                             <?php echo $ft->wording_footer_satu?>
                             </div>    
                         </div>
                                                 
@@ -19,7 +20,7 @@
                             <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Halo</h3>
                             <nav>
                                 <ul class="nav">
-                                   <?php echo $data->wording_footer_dua?>
+                                   <?php echo $ft->wording_footer_dua?>
                                 </ul>
                             </nav>
 
@@ -34,7 +35,7 @@
                         <div class="tm-footer-content-box">
                         
                             <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Hallo</h3>
-                           <?php echo $data->wording_footer_tiga?>
+                           <?php echo $ft->wording_footer_tiga?>
 
                         </div>
                         
@@ -44,7 +45,7 @@
 
                         <div class="tm-footer-content-box">
                         
-                            <?php echo $data->wording_footer_empat?>
+                            <?php echo $ft->wording_footer_empat?>
 
                         </div>
                         
