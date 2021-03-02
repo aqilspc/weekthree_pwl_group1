@@ -1,6 +1,6 @@
 @extends('layouts.header')
 @section('content')
-<div class="tm-contact-img-container">
+<div class="tm-contact-img-container" style="background-image: url('{{url('assets/img/tm-contact-img1.jpg')}}');">
             
         </div>
 
@@ -35,7 +35,7 @@
                         <section class="tm-margin-t-mid tm-map-section">
                             <h3 class="tm-gold-text tm-form-title">Pellentesque fermentum mauris</h3>
 
-                            <div id="google-map"></div>
+                         <!--    <div id="google-map"></div> -->
 
                             <p class="tm-form-description">Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.</p>
 
@@ -106,49 +106,6 @@
                                     scelerisque porttitor pharetra</p>
                                     <a href="#" class="tm-btn text-uppercase">Read More</a>    
                                 </div>  
-
-                            </div>
-                        </div>
-                        <hr class="tm-margin-t-mid">
-                        <div class="row tm-contact-row-related-posts">
-                            <div class="col-xs-12">
-                                
-                                <div class="tm-contact-related-posts-container">
-                                    <h3 class="tm-gold-text tm-title tm-margin-b-30">Related Posts</h3>
-                                    <div class="media tm-related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/tm-img-240x120-1.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                    <div class="media tm-related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/tm-img-240x120-2.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                    <div class="media tm-related-post">
-                                      <div class="media-left media-middle">
-                                        <a href="#">
-                                          <img class="media-object" src="img/tm-img-240x120-3.jpg" alt="Generic placeholder image">
-                                        </a>
-                                      </div>
-                                      <div class="media-body">
-                                        <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                        <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                      </div>
-                                    </div>
-                                </div>                                
 
                             </div>
                         </div>

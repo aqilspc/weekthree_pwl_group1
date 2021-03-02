@@ -1,6 +1,6 @@
 @extends('layouts.header')
 @section('content')
-<div class="tm-blog-img-container">
+<div class="tm-blog-img-container" style="background-image: url('{{url('assets/img/tm-blog-img1.jpg')}}');">
             
         </div>
 
@@ -12,7 +12,7 @@
                         <div class="tm-blog-post">
                             <h3 class="tm-gold-text">{{$title}}</h3>
                             <p>{{$message}}</p>
-                            <img src="img/tm-img-1010x336-1.jpg" alt="Image" class="img-fluid tm-img-post">
+                            <img src="{{url('assets/img/tm-img-1010x336-1.jpg')}}" alt="Image" class="img-fluid tm-img-post">
                             
                             <p>You can help templatemo by telling your friends about our HTML CSS templates. Praesent velit ante, congue ac dignissim in, vehicula sit amet urna. Fusce in dapibus quam, eget finibus velit. Nullam erat odio, vulputate id est ut, consequat rutrum justo. Vivamus vel leo vel nunc tincidunt mattis. Sed neque diam, semper suscipit dictum a, sodales ac metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
@@ -27,7 +27,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
                                 <div class="tm-content-box">
-                                    <img src="img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-30 img-fluid">
+                                    <img src="{{url('assets/img/tm-img-310x180-1.jpg')}}" alt="Image" class="tm-margin-b-30 img-fluid">
                                     <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #1</h4>
                                     <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
                                     consequat mauris dapibus id. Donec
@@ -40,7 +40,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
                                 <div class="tm-content-box">
-                                    <img src="img/tm-img-310x180-2.jpg" alt="Image" class="tm-margin-b-30 img-fluid">
+                                    <img src="{{url('assets/img/tm-img-310x180-2.jpg')}}" alt="Image" class="tm-margin-b-30 img-fluid">
                                     <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #2</h4>
                                     <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
                                     consequat mauris dapibus id. Donec
@@ -53,7 +53,7 @@
                             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 
                                 <div class="tm-content-box">
-                                    <img src="img/tm-img-310x180-3.jpg" alt="Image" class="tm-margin-b-30 img-fluid">
+                                    <img src="{{url('assets/img/tm-img-310x180-3.jpg')}}" alt="Image" class="tm-margin-b-30 img-fluid">
                                     <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #3</h4>
                                     <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
                                     consequat mauris dapibus id. Donec

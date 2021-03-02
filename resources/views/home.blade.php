@@ -1,6 +1,7 @@
 @extends('layouts.header')
 @section('content')
-<div class="tm-home-img-container">
+
+<div class="tm-home-img-container" style="background-image: url('{{url('assets/img/tm-home-img1.jpg')}}');">
             <img src="img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
         </div>
         <section class="tm-section">
@@ -9,60 +10,21 @@
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
                         <h2 class="tm-gold-text tm-title">{{$title}}</h2>
                         <p class="tm-subtitle">{{$message}}</p>
+
                     </div>
                 </div>
                 <div class="row">
+                    @foreach($blog as $b)
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
                         <div class="tm-content-box">
-                            <img src="{{url('assets/img/tm-img-310x180-1.jpg')}}" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #1</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
+                            <img src="{{$b->thumbnail_image}}" alt="Image" class="tm-margin-b-20 img-fluid">
+                            <h4 class="tm-margin-b-20 tm-gold-text">{{$b->judul}}</h4>
+                            <p class="tm-margin-b-20">{{$b->isi}}</p>
                             <a  class="tm-btn text-uppercase">Detail</a>    
                         </div>  
 
                     </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="{{url('assets/img/tm-img-310x180-2.jpg')}}" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #2</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a  class="tm-btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="{{url('assets/img/tm-img-310x180-3.jpg')}}" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #3</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a  class="tm-btn text-uppercase">Detail</a>    
-                        </div>  
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="{{url('assets/img/tm-img-310x180-4.jpg')}}" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">Lorem ipsum dolor #4</h4>
-                            <p class="tm-margin-b-20">Aenean cursus tellus mauris, quis
-                            consequat mauris dapibus id. Donec
-                            scelerisque porttitor pharetra</p>
-                            <a  class="tm-btn text-uppercase">Read More</a>    
-                        </div>  
-
-                    </div>
+                    @endforeach
                 </div> <!-- row -->
 
                 <div class="row tm-margin-t-big">
@@ -95,11 +57,9 @@
                                         </h3>
                                         <nav>
                                             <ul class="nav">
-                                                <li><a href="" class="tm-text-link">Tincidunt non faucibus placerat</a></li>
-                                                <li><a href="" class="tm-text-link">Vestibulum tempor ac lectus</a></li>
-                                                <li><a href="" class="tm-text-link">Fusce non turpis euismod</a></li>
-                                                <li><a href="" class="tm-text-link">Nam in augue consectetur</a></li>
-                                                <li><a href="" class="tm-text-link">Text Link Color #006699</a></li>
+                                                @foreach($category as $c)
+                                                <li><a href="" class="tm-text-link">{{$c->name}}</a></li>
+                                                @endforeach
                                             </ul>
                                         </nav>    
                                     </div> <!-- col -->
